@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-color:#090909;
+    height:100%;
+}
+.wrapper
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+h1
+{
+    color:#fff;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h6
+{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+    
+.body, h1,h2,p  {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 29, 29);
+}
+h2
+{
+    color:#fff;
+    align-items: center;
+}
+.header
+{
+
+    background-color: rgb(93, 117, 137);
+    height:10px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100px;
+
+}
+.main 
+    {
+        padding: 20px;
+        margin-top: 60px; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* Define styles for individual place cards */
+.place-card {
+    width: 900px;
+    position: relative;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+}
+.place-card:hover {
+    transform: translateY(0);
+    opacity: 0.8;
+}
+img
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.content
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity:1;
+}
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px);
+}
+.content p {
+    font-size: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.content > * {
+    color: #fff;
+    font-family: verdana;
+    text-align: center;
+    transition: transform 0.6s;
+}
+.content:hover,.place-card{
+    transform:translateY(0px) ;
+    opacity:0.8;
+}
+
+    /* Define styles for the footer */
+footer {
+    margin-top: bottom;
+    background-color: #090909;
+    color: #f8f0f0;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    
